@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(#c2e9fb, #de88f0, #fad0c4, #a6c1ee);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 300px 50px 50px;
+    row-gap: 30px;
+    column-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+
+}
+img{
+    margin-top: -50px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.cup{
+    width: 160px;
+    height: 160px;
+    margin-left: 25px;
+}
+.cone{
+    width: 250px;
+    height: 250px;
+}
+.orange{
+    width: 270px;
+    height: 290px;
+    margin-left: 15px;
+}
+a{
+    text-decoration-line: none;
+    color: #db51f7;
+}
+audio{
+    display: none;
+}
+.block1{
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    background-color:  hsl(39, 100%, 71%);
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+    justify-content: center;
+    justify-items: center;
+}
+.block2{
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    background-color: hsl(256, 67%, 59%);
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    width: 200px;
+    height: 400px;
+    font-size: 40px;
+}
+.block3{
+    border-radius: 10px;
+    display: grid;
+    text-align:left;
+    justify-content: left;
+    background-color: hsl(254, 88%, 90%);
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+    width: 300px;
+    height: 550px;
+    font-size: 40px;
+}
+.small{
+    font-size: 20px; 
+}
+.block4{
+    border-radius: 10px;
+    display: grid;
+    text-align: left;
+    background-color: hsl(254, 88%, 90%);
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+    width: 300px;
+    height: 450px;
+    font-size: 40px;    
+}
+.block5{
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    background-color: hsl(31, 66%, 93%);
+    padding: 10px;
+    margin: 10px;
+    color: #000;
+    width: 200px;
+    height: 350px;
+    font-size: 40px; 
+    margin-top: 111px;
+}
+.block6{
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    background-color: hsl(256, 67%, 59%);
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 260px;
+    row-gap: 1px;
+    color: #fff;
+    width: 300px;
+    height: 200px;
+    font-size: 40px;
+}
+footer{
+    margin-top:-420px;
+    margin-right: 500px;
+    text-align: center;
+    float: left;
+    writing-mode: vertical-rl;
+}
+.block6:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(256, 46%, 45%);
+    transition: all 0.3s ease;
+}
+.block5:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(33, 52%, 70%);
+    transition: all 0.3s ease;
+}
+.block4:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(255, 45%, 69%);
+    transition: all 0.3s ease;
+}
+.block3:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(255, 78%, 78%);
+    transition: all 0.3s ease;
+}
+.block2:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(256, 46%, 45%);
+    transition: all 0.3s ease;
+}
+.block1:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px hsl(39, 56%, 46%);
+    transition: all 0.3s ease;
+}
+::selection{
+    color: hsl(256, 46%, 45%);
+    background: #fff;
+}
+::grammar-error {
+  text-decoration: underline red;
+  color: red;
+}
+::spelling-error {
+  text-decoration: wavy red underline;
+}
+@media (max-width: 700px){
+    body{
+        display: block;
+    }
+    .block1{
+        width: 300px;
+    }
+    .block2{
+        width: 300px;
+    }
+    .block5{
+        width: 300px;
+        position: absolute;
+        margin-top: -3px;
+    }
+    .block6{
+        row-gap: 0px;
+        position: absolute;
+        margin-top: 375px;
+    }
+    .cup{
+        width: 250px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register!</title>
+    <link rel="icon" href="flower (1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(#c2e9fb, #de88f0,#de88f0, #fad0c4, #a6c1ee);
+            background-size: 400% 400%;
+            padding: 20px;
+            font-family: "DM sans", sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: hsl(31, 66%, 93%);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            z-index: 1;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000;
+            font-weight:normal;
+            font-size: 32px;
+        }
+        .group {
+            margin-bottom: 40px;
+        }
+        input {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        input:focus {
+            outline: none;
+            box-shadow: 0 4px 15px rgba(233, 181, 102, 0.685);
+        }
+        input::placeholder {
+            color: #aaa;
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            background: hsl(256, 67%, 59%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 5px 15px hsl(256, 67%, 59%);
+        }
+        button:hover, .goback:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px hsl(256, 54%, 69%);
+        }
+        a{
+            text-decoration-line: none;
+            color: #fff;
+        }
+        i.size {
+            font-size: 40px;
+        }
+        .leaf1{
+            width: 350px;
+            height: 350px;
+            margin-left: -100px;
+            margin-top: -300px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+        .leaf2{
+            width: 350px;
+            height: 350px;
+            margin-left: -250px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+        .flower{
+            width: 200px;
+            height: 200px;
+            margin-left: -90px;
+            margin-top: -20px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+        .flower2{
+            width: 200px;
+            height: 200px;
+            margin-left: -90px;
+            margin-top: -90px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+        ::selection{
+            color: hsl(256, 46%, 45%);
+            background: #fff;
+        }
+        @media (max-width: 700px){
+            .group{
+                width: fit-content;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+            button{
+                margin-top: 5px;
+            }
+            .container{
+                height: 500px;
+                width: fit-content;
+                padding: 40px;
+            }
+            .leaf1{
+                margin-left: -120px;
+                margin-top: -300px;
+            }
+            .leaf2{
+                margin-left: -120px;
+            }
+            .leaf1, .leaf2{
+                width: 250px;
+                height: 250px;
+            }
+            .flower, .flower2{
+                width: 100px;
+                height: 100px;
+            }
+            .flower{
+                margin-left: -60px;
+            }
+            .flower2{
+                margin-left: -35px;
+            }
+        }
+        ::grammar-error {
+            text-decoration: underline red;
+            color: red;
+        }
+        ::spelling-error {
+            text-decoration: wavy red underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="leaf2" src="fern (1).png" alt="leaf2">
+    </div>
+    <div>
+        <img class="flower" src="sakura.png" alt="flower">
+    </div>
+    <div class="container">
+        <main>
+        <h2>Login</h2>
+        <form>
+            <div class="group">
+                <p spellcheck="true">First Name</p>
+                <div >
+                    <input type="text" placeholder=" Enter your first name" required>   
+                </div>
+            </div>
+            <div class="group">
+                <p for="lastName">Last Name</p>
+                <div>
+                    <input type="text" placeholder=" Enter your last name" required>
+                </div>
+            </div>
+            <div class="group">
+                <p>Email Address</p>
+                <div>
+                    <input type="email" placeholder=" Enter your email address" required>  
+                </div>
+            </div>
+            <div class="group">
+                <p>Phone Number</p>
+                <div>
+                    <input type="tel" placeholder=" Enter your phone" required>
+                </div>
+            </div>
+            <button id="btn" title="Click Here To Go To Home Page.">Submit</button>
+            <script>
+                document.getElementById("btn").onclick = function(){
+                    window.location.href = "home.html"
+                }
+            </script>
+        </form>
+        </main>
+    </div>
+    <div>
+        <img class="leaf1" src="fern.png" alt="leaf1">
+    </div>
+    <div>
+        <img class="flower2" src="sakura.png" alt="sakura">
+    </div>
+</body>
+</html>
