@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="icon" href="sakura.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(#c2e9fb, #de88f0, #fad0c4, #a6c1ee);
+            background-size: 400% 400%;
+            padding: 20px;
+            font-family: "DM sans", sans-serif;
+           
+        }
+        a{
+            text-decoration-line: none;
+            color: #fff;
+        }
+        .goback{
+            display: grid;
+            width: 80px;
+            height: 80px;
+            position: absolute; 
+            margin-bottom: 800px;
+            margin-right: 1000px;
+            background-color: hsl(256, 67%, 59%);
+            overflow: hidden;
+            border-radius: 50%;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .goback:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px hsl(256, 54%, 69%);
+        }
+        .goback i {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color:hsl(256, 53%, 50%);
+            display:flex;
+            flex-direction: row;
+            width: 90vh;
+            height: 440px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px hsl(255, 45%, 56%);
+            z-index: 1;
+        }
+        .text-box{
+            color: white;
+            width:70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start; 
+            align-items: start;     
+            margin-left: 60px; 
+            margin-top: 60px; 
+            flex: 1;
+        }    
+        .text-box h1{
+            text-align: left;
+            margin-bottom:25px;
+        }
+        .text-box .big{
+            text-align: left;
+            line-height: 1.5;
+            margin-left: 0;
+            margin-bottom:70px;
+        }
+        .image-box{   
+            width: 50%;
+            height: 440px;
+            flex: 1; 
+          
+        }
+        img{ 
+            width:100%;
+            height: 100%; 
+            border-top-right-radius: 10px;    
+            border-bottom-right-radius: 10px;   
+        }
+        span{
+            color: #de88f0;
+        }
+        .leaf2{
+            width: 350px;
+            height: 350px;
+            margin-left: -140px;
+            margin-top: -130px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+        }
+        ::selection{
+            color: hsl(256, 46%, 45%);
+            background: #fff;
+        }
+        ::grammar-error {
+            text-decoration: underline red;
+            color: red;
+        }
+        ::spelling-error {
+            text-decoration: wavy red underline;
+        }
+        @media (max-width:600px) {
+            .container{
+                height:500px;
+                width: 350px;
+                display:flex;
+                flex-direction:column-reverse;
+                justify-content:center;
+                align-items:center;
+                align-content: center;
+            }
+            .image-box{
+                margin-top: 20px;
+                height: 150px;
+                margin-top: 80px;
+                width: 90%;
+            }
+            .text-box{
+                margin-left: 0;
+                margin-top: 20px;
+                font-size: 12px;
+            }
+            .goback{
+                margin-bottom: 600px;
+                margin-right: 25px;
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="goback">
+        <a href="home.html"><i class="fa fa-home size" ></i></a>
+    </div>
+    <div>
+        <img class="leaf2" src="fern (1).png" alt="leaf2">
+    </div>
+    <div class="container">
+        <div class="text-box">
+           <h1 spellcheck="true"> "Together we create<span> memories</span>,<br> share dreams, and inspire".</h1>
+
+           <p class="big">We are Mariam and Sohaila, sixteen years old,
+              full of <br>creativity, passion, crazy dreams, endless laughter,<br>
+               love for life, adventures and curiosity.</p>
+        </div>
+        <div class="image-box">
+           <img src="flo.png" alt="flowers"> 
+        </div>
+
+    </div>
+</body>
+</html>
